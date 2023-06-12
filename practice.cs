@@ -34,16 +34,31 @@ using System;
 // -- CONDITIONALS -- //
 
 // if statements
+// class MainClass {
+//     public static void Main (string[] args) {
+//         int num = 5;
+
+//         if (num > 3) {
+//             Console.WriteLine("num is greater than 3");
+//         } else if (num > 1) {
+//             Console.WriteLine("num is greater than 1");
+//         } else {
+//             Console.WriteLine("num is 1 or less");
+//         }
+//     }
+// }
+
+///////////////////////
+// -- WHILE LOOPS -- //
+
 class MainClass {
     public static void Main (string[] args) {
-        int num = 5;
+        int counter = 0;
 
-        if (num > 3) {
-            Console.WriteLine("num is greater than 3");
-        } else if (num > 1) {
-            Console.WriteLine("num is greater than 1");
-        } else {
-            Console.WriteLine("num is 1 or less");
+        //this will loop 10 times
+        while(counter < 10) {
+            Console.WriteLine(counter);
+            counter += 1;
         }
     }
 }
