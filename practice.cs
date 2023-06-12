@@ -59,6 +59,15 @@ class MainClass {
         while(counter < 10) {
             Console.WriteLine(counter);
             counter += 1;
+
+            if (counter % 2 == 0) {
+                Console.WriteLine("It's even");
+            } else if (counter % 3 == 0) {
+                Console.WriteLine("meow");
+            } else {
+                Console.WriteLine(counter);
+            }
         }
+
     }
 }
