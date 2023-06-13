@@ -68,6 +68,5 @@ class MainClass {
                 Console.WriteLine(counter);
             }
         }
-
     }
 }
