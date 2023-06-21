@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 //////////////////////////////
 // -- CREATING VARIABLES -- //
@@ -51,22 +52,54 @@ using System;
 ///////////////////////
 // -- WHILE LOOPS -- //
 
+// class MainClass {
+//     public static void Main (string[] args) {
+//         int counter = 0;
+
+//         //this will loop 10 times
+//         while(counter < 10) {
+//             Console.WriteLine(counter);
+//             counter += 1;
+
+//             if (counter % 2 == 0) {
+//                 Console.WriteLine("It's even");
+//             } else if (counter % 3 == 0) {
+//                 Console.WriteLine("meow");
+//             } else {
+//                 Console.WriteLine(counter);
+//             }
+//         }
+//     }
+// }
+///////////////////////
+// -- Collections -- //
 class MainClass {
     public static void Main (string[] args) {
-        int counter = 0;
 
-        //this will loop 10 times
-        while(counter < 10) {
-            Console.WriteLine(counter);
-            counter += 1;
+        // Create a new ArrayList
+        ArrayList my_list = new ArrayList();
 
-            if (counter % 2 == 0) {
-                Console.WriteLine("It's even");
-            } else if (counter % 3 == 0) {
-                Console.WriteLine("meow");
-            } else {
-                Console.WriteLine(counter);
-            }
-        }
+        //Add Elements to Array List
+        my_list.Add(1);
+        my_list.Add(2);
+        my_list.Add(3);
+
+        // Printing the whole list, just shows the object type
+        Console.WriteLine(my_list);
+        // Printing an individual item
+        Console.WriteLine(my_list[0]);
+
+        //Create a new Hashtable
+        Hashtable my_hashtable = new Hashtable();
+
+        //Add properties to Hashtable
+        my_hashtable.Add("cheese", "gouda");
+        my_hashtable.Add("bread", "rye");
+
+        // Printing the whole hashtable
+        Console.WriteLine(my_hashtable);
+        // accessing one value from the hashtable
+        Console.WriteLine(my_hashtable["cheese"]);
+        Console.WriteLine(my_hashtable["bread"]);
     }
 }
