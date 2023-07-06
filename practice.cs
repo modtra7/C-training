@@ -1,6 +1,51 @@
 using System;
 using System.Collections;
 
+
+public class MainClass
+{
+    public int guess;
+
+    public int randomNumber; 
+
+    void start()
+    {
+        Console.WriteLine("Pick a number between 1 and 10");
+        randomNumber = Random.Range(1, 10);
+    }
+
+    void update()
+    {
+
+    }
+
+    public void CheckGuess()
+    {
+        if (guess > 0 && guess < 11)
+        {
+            if (guess == randomNumber)
+            {
+                Console.WriteLine("You did it!!");
+            }
+            else if (guess > randomNumber)
+            {
+                Console.WriteLine("Wrong. Too high");
+            }
+            else
+            {
+                Console.WriteLine("Nope. Too low");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Please pick a number from 1 to 10");
+        }
+    }
+}
+
+
+
+
 //////////////////////////////
 // -- CREATING VARIABLES -- //
 
@@ -73,33 +118,33 @@ using System.Collections;
 // }
 ///////////////////////
 // -- Collections -- //
-class MainClass {
-    public static void Main (string[] args) {
+// class MainClass {
+//     public static void Main (string[] args) {
 
-        // Create a new ArrayList
-        ArrayList my_list = new ArrayList();
+//         // Create a new ArrayList
+//         ArrayList my_list = new ArrayList();
 
-        //Add Elements to Array List
-        my_list.Add(1);
-        my_list.Add(2);
-        my_list.Add(3);
+//         //Add Elements to Array List
+//         my_list.Add(1);
+//         my_list.Add(2);
+//         my_list.Add(3);
 
-        // Printing the whole list, just shows the object type
-        Console.WriteLine(my_list);
-        // Printing an individual item
-        Console.WriteLine(my_list[0]);
+//         // Printing the whole list, just shows the object type
+//         Console.WriteLine(my_list);
+//         // Printing an individual item
+//         Console.WriteLine(my_list[0]);
 
-        //Create a new Hashtable
-        Hashtable my_hashtable = new Hashtable();
+//         //Create a new Hashtable
+//         Hashtable my_hashtable = new Hashtable();
 
-        //Add properties to Hashtable
-        my_hashtable.Add("cheese", "gouda");
-        my_hashtable.Add("bread", "rye");
+//         //Add properties to Hashtable
+//         my_hashtable.Add("cheese", "gouda");
+//         my_hashtable.Add("bread", "rye");
 
-        // Printing the whole hashtable
-        Console.WriteLine(my_hashtable);
-        // accessing one value from the hashtable
-        Console.WriteLine(my_hashtable["cheese"]);
-        Console.WriteLine(my_hashtable["bread"]);
-    }
-}
+//         // Printing the whole hashtable
+//         Console.WriteLine(my_hashtable);
+//         // accessing one value from the hashtable
+//         Console.WriteLine(my_hashtable["cheese"]);
+//         Console.WriteLine(my_hashtable["bread"]);
+//     }
+// }
